@@ -231,10 +231,11 @@ def compareratings(book1, book2):
     # TODO modificar operador de comparacion lab 4
     return (float(book1["average_rating"]) > float(book2["average_rating"]))
 
-
+            
 # Funciones de ordenamiento
 
 def sortBooks(catalog, size):
     # TODO completar los cambios del return en el sort para el lab 4 (Parte 1).
     sub_list = lt.subList(catalog["books"], 1, size)
-    sa.sort(sub_list, compareratings)
+    sorted_list=sa.sort(sub_list, compareratings)
+    return sorted_list
